@@ -1,0 +1,20 @@
+[
+    {
+    "rollno":"1",
+    "name":"piyush1",
+    "address":"Ghazipur1"
+    }
+    ,
+    {
+        "rollno":"2",
+        "name":"piyush2",
+        "address":"Ghazipur2"
+    },
+    {
+        "rollno":"3",
+        "name":"piyush23",
+        "address":"Ghazipur23"
+        
+    }
+]
+ 

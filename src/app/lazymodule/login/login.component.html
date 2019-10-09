@@ -1,0 +1,30 @@
+<div style="text-align: center;">
+    <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+      <br />
+      <div>
+        <label> username </label><br />
+        <input type="text" formControlName="email" />
+        <!-- <div *ngIf="submitted && loginForm.controls.email.errors" class="alt alert-danger mt-2" role="alert">
+            <div style="color: brown;">Your email is requrid</div>
+            {{errorMessage}}
+          </div> -->
+        
+      </div>
+      <br />
+      <div>
+        <label> password </label><br />
+        <input type="password" formControlName="mobile" />
+        <!-- <div *ngIf="submitted && loginForm.controls.mobile.errors" class="alt alert-danger mt-2" role="alert">
+            <div style="color: brown;">Your password is requrid</div>
+        </div> -->
+        
+      </div>
+      <br />
+      <div>    
+        <p style="color: red;font-weight: 900;">{{errorMessage}}</p>
+        <input type="submit" value="submit" />
+      </div>
+    </form>
+  </div>
+  
+  

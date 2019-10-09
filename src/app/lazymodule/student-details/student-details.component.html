@@ -1,0 +1,31 @@
+<div class="row">
+  <div class="col-sm-12">
+    <button (click)="student()">
+      Get
+    </button>
+    <div *ngIf="config">
+      <table id="table1">
+        <thead>
+          <tr>
+            <th>Age Group</th>
+            <th>No. of employees</th>
+            <th>Employees List</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let group of this.group_member">
+            <th> {{ group['ageGroup']}} </th>
+            <th> {{ group?.employees.length }} </th>
+            <th> 
+              <div *ngFor="let emp of group?.employees">
+                  {{ emp?.employee_name }}
+                  {{ emp?.employee_age }}
+              </div>  
+            </th>
+          </tr>
+         
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
